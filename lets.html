@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h1 {
+    color: blue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+
+}
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ebd1d1;
+        margin: 0;
+        padding: 20px;
+    }
+
+    </style>
+</head>
+<body>
+        <h1>This is Javascript Test</h1>
+        <div id="output"></div>
+
+
+<script>
+    
+const id = 1
+let name = 'harjeet singh'
+let email = 'jharjeet95@gmail.com'
+let password ='jassal00'
+let age =20
+let state = 'punjab'
+let user = {
+    id: id,
+    name: name,
+    email: email,
+    password: password,
+    age: age,
+    state: state
+};
+ let output = `
+    <ul>
+      <li><strong>ID:</strong> ${user.id}</li>
+      <li><strong>Name:</strong> ${user.name}</li>
+      <li><strong>Email:</strong> ${user.email}</li>
+      <li><strong>Password:</strong> ${user.password}</li>
+      <li><strong>Age:</strong> ${user.age}</li>
+      <li><strong>State:</strong> ${user.state}</li>
+    </ul>
+  `;
+  document.getElementById("output").innerHTML = output;
+    
+    console.log("Hello, World!");
+    alert("Welcome to the JavaScript Test Page!");
+   
+
+</script>
+</body>
+</html>
